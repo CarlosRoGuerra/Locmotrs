@@ -1,0 +1,396 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f7fb;
+  color: #1f2937;
+}
+
+a {
+  text-decoration: none;
+}
+
+.home-page {
+  min-height: 100vh;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, #0f172a, #1e3a8a, #2563eb);
+  color: #fff;
+  padding: 24px 40px 70px;
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: 0 auto 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.logo-area h2 {
+  font-size: 24px;
+  margin-bottom: 3px;
+}
+
+.logo-area span {
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+.logo-badge {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.14);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  backdrop-filter: blur(8px);
+  font-size: 18px;
+}
+
+.nav-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.3fr 0.9fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.hero-text h1 {
+  font-size: 52px;
+  line-height: 1.1;
+  margin: 16px 0 20px;
+  max-width: 700px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  line-height: 1.7;
+  opacity: 0.92;
+  max-width: 650px;
+}
+
+.tag {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.hero-buttons {
+  margin-top: 28px;
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.hero-card {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 24px;
+  padding: 28px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.18);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.card-header h3 {
+  font-size: 22px;
+}
+
+.card-header span {
+  background: #22c55e;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.card-metrics {
+  display: grid;
+  gap: 16px;
+}
+
+.metric {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 18px;
+}
+
+.metric strong {
+  display: block;
+  font-size: 28px;
+  margin-bottom: 6px;
+}
+
+.metric span {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* BUTTONS */
+.btn {
+  padding: 14px 22px;
+  border-radius: 12px;
+  font-weight: bold;
+  transition: 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  background: #2563eb;
+  color: #fff;
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.35);
+}
+
+.btn-primary:hover {
+  background: #1d4ed8;
+}
+
+.btn-outline {
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: #fff;
+  background: transparent;
+}
+
+.btn-outline:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.btn-light {
+  background: #fff;
+  color: #0f172a;
+}
+
+.btn-light:hover {
+  background: #e5e7eb;
+}
+
+.btn-dark {
+  background: #111827;
+  color: #fff;
+}
+
+.btn-dark:hover {
+  background: #000;
+}
+
+/* SECTIONS */
+.features,
+.stats,
+.cta-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 70px 40px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 42px;
+}
+
+.section-title span {
+  color: #2563eb;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.section-title h2 {
+  font-size: 38px;
+  margin: 12px 0;
+  color: #111827;
+}
+
+.section-title p {
+  color: #6b7280;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.feature-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 28px;
+  box-shadow: 0 14px 35px rgba(15, 23, 42, 0.08);
+  transition: 0.25s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+}
+
+.feature-card .icon {
+  font-size: 30px;
+  margin-bottom: 16px;
+}
+
+.feature-card h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #111827;
+}
+
+.feature-card p {
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.stat-box {
+  background: linear-gradient(180deg, #ffffff, #f8fafc);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.07);
+}
+
+.stat-box h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #0f172a;
+}
+
+.stat-box p {
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.cta-box {
+  background: linear-gradient(135deg, #111827, #1e40af);
+  color: #fff;
+  border-radius: 28px;
+  padding: 50px 32px;
+  text-align: center;
+  box-shadow: 0 20px 50px rgba(30, 64, 175, 0.18);
+}
+
+.cta-box h2 {
+  font-size: 36px;
+  margin-bottom: 14px;
+}
+
+.cta-box p {
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.7;
+  opacity: 0.92;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 28px;
+  flex-wrap: wrap;
+}
+
+.footer {
+  text-align: center;
+  padding: 28px 20px 40px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 1024px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-text h1 {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero,
+  .features,
+  .stats,
+  .cta-section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar {
+    margin-bottom: 40px;
+  }
+
+  .nav-actions,
+  .hero-buttons,
+  .cta-buttons {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
